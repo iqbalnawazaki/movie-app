@@ -44,7 +44,7 @@ const ColCardBox = ({Title, imdbID, Poster, Type, ShowDetail, DetailRequest, Act
         ActivateModal(true);
         DetailRequest(true);
 
-        axios.get(`http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}&page=2`)
+        axios.get(`https://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}&page=2`)
         .then(function (response) {
             DetailRequest(false);
             ShowDetail(response.data);
@@ -137,7 +137,7 @@ function App() {
         setError(null);
         setData(null);
 
-        axios.get(`http://www.omdbapi.com/?s=${q}&apikey=${API_KEY}`)
+        axios.get(`https://www.omdbapi.com/?s=${q}&apikey=${API_KEY}`)
         .then(function (response) {
             setData(response.data.Search);
             console.log(response.data);
