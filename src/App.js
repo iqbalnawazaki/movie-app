@@ -202,7 +202,7 @@ function App() {
                         }
                     </Modal>
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Movie App ©2021</Footer>
+                <Footer style={{ textAlign: 'center' }}> Movie App ©2021 </Footer>
             </Layout>
         </div>
     );
